@@ -1,0 +1,47 @@
+/* TESTIMONIAL SECTION */
+
+.testimonialSectionContainer {
+    background-color: #292E47;
+    height: 500px;
+    background-image: url('FOTOS/testimonial section/orbit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* como hacer para que la imagen no se distorcione */
+
+.kristinWatson img {
+    width: 50px;
+    aspect-ratio: 1;   
+    border-radius: 50%;
+}
+
+.memoji1 {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+.memoji2 {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.memoji3 {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+.memoji4 {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

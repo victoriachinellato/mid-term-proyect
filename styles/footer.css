@@ -1,0 +1,16 @@
+/* FOOTER SECTION */
+
+.footerSectionContainer {
+    display: flex;
+}
+
+
+
+
+.footerLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+

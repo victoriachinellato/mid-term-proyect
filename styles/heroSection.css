@@ -1,0 +1,81 @@
+/* HERO SECTION */
+
+.heroContainer {
+    display: flex;
+
+}
+.heroArticle {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+
+}
+
+.heroArticle h1 {
+    color:#292E47;
+    font-size: 60px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+
+}
+
+.heroArticle p {
+    color: #6b708d;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 150%;
+    margin-right: 200px;
+}
+
+.geInTouchBtn {
+    background-color: #072ac8 ;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    color: #F2F4FC ;
+    font-size: 15px;
+
+}
+
+.seeOurWorkBtn{
+    color: #6b708d;
+    padding: 10px 30px 10px 30px;
+    background-color: #F2F4FC;
+    border: none;
+    font-size: 15px;
+
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: space-around;
+
+}
+.heroImages{
+    position: relative;
+    width: 50vw;
+    margin-right: 100px;
+    
+}
+.heroImage {
+    
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;  
+}
+
+.firstCard {
+    max-width: 300px;
+    position: absolute;
+    top: 10px;
+    left: -80px;  
+}
+
+.secondCard{
+    max-width: 300px;
+    position: absolute;
+    bottom: -140px;
+    right: -85px;
+}
