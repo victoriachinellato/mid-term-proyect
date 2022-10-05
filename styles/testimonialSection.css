@@ -1,47 +1,141 @@
 /* TESTIMONIAL SECTION */
 
+/* TESTIMONIAL SECTION */
+
 .testimonialSectionContainer {
     background-color: #292E47;
     height: 500px;
-    background-image: url('FOTOS/testimonial section/orbit.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../FOTOS/testimonial section/orbit.png');
+    background-size:  contain;
+    background-repeat: repeat-y;
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
 }
 
+.testimonialSectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.testimonialSectionText h2{
+    color: #ecf7ff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.testimonialSectionText p {
+    color: #ffc600;
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px;
+}
 /* como hacer para que la imagen no se distorcione */
 
-.kristinWatson img {
-    width: 50px;
-    aspect-ratio: 1;   
-    border-radius: 50%;
+.kristinWatson {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
 }
 
+.kristinWatson img {
+    width: auto;
+    height: 50px;
+    aspect-ratio: 1;   
+    border-radius: 50%;
+    margin:10px ;
+}
+
+.clientName {
+    color: #a2d6f9;
+    font-size: 17px;
+}
+
+.booking {
+    color: #ecf7ff;
+    font-size: 13px;
+}
 .memoji1 {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 30px;
 
 }
 .memoji2 {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
 }
 .memoji3 {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 30px;
+    top: 30px;
 
 }
 .memoji4 {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 30px;
+}
+
+@media(max-width:768px) {
+    .testimonialSectionContainer {
+        background-color: #292E47;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 100px;
+        padding-bottom: 200px;
+        
+    }
+
+    .testimonialSectionText h2{
+        color: #ecf7ff;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 290px;
+    }
+    
+    .testimonialSectionText p {
+        color: #ffc600;
+        font-size: 24px;
+        line-height: 160%;
+        font-weight: 500;
+        text-align: center;
+        margin: 25px;
+        margin-top: 35px;
+    }
+
+
+    .kristinWatson {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 25px;
+    
+    }
+    
+
+
+
 }

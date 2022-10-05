@@ -8,17 +8,31 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-     <!-- NAV BAR -->
-     <nav class="navBar">
+      <!-- NAV BAR -->
+      <nav class="navBar">
         <div class="navContainer" >
             <img src="./FOTOS/nav bar/circle.svg" alt="Circle logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Porjects</a></li>
-                <li><a href="#">Services</a></li>
+            <ul class="navMenu">
+                <li id="navItem">
+                    <a id="navLink" href="#">Home</a>
+                </li>
+                <li id="navItem">
+                    <a id="navLink" href="#">Projects</a>
+                </li>
+                <li id="navItem">
+                    <a id="navLink" href="#">Services</a>
+                </li>
             </ul>
             <button>Contact Us</button>
+
+            <div class="hamburgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+
+       
     </nav>
 
 
@@ -27,7 +41,7 @@
     <section class="contactUsSection">
         <div class="contactUsSectionContainer">
             <h1>Contact Us</h1>
-            <form class="contactUsForm"action="post">
+            <form class="contactUsForm" action="post">
                 <div class="fullName">
                     <label class="contactUsLabel">Full Name *</label>
                     <input placeholder="Enter your full name" type="text">
@@ -46,6 +60,7 @@
                     <label class="contactUsLabel" for="">Message</label>
                     <input placeholder="Write your message here..."type="text">
                 </div>
+                <button>Submit</button>
             </form>
         </div>
     </section>

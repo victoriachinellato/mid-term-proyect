@@ -1,9 +1,15 @@
 /* HERO SECTION */
 
+/* HERO SECTION */
+
 .heroContainer {
     display: flex;
 
 }
+
+
+
+
 .heroArticle {
     width: 50%;
     margin-top: 50px;
@@ -61,7 +67,7 @@
 }
 .heroImage {
     
-    max-width: 100%;
+    width: 100%;
     justify-self: center;
     align-self: center;  
 }
@@ -69,9 +75,12 @@
 .firstCard {
     max-width: 300px;
     position: absolute;
-    top: 10px;
-    left: -80px;  
+    /* top: 10px; */
+    top: 5%;
+    /* left: -80px;   */
+    left: -15%
 }
+
 
 .secondCard{
     max-width: 300px;
@@ -79,3 +88,72 @@
     bottom: -140px;
     right: -85px;
 }
+
+@media(max-width:768px) {
+    .heroArticle h1 {
+        color:#292E47;
+        font-size: 60px;
+        text-align: center;
+        line-height: 130%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        
+    }
+    
+    .heroArticle div {
+        display: flex;
+        justify-content: center;
+    }
+    .heroArticle p {
+        color: #6b708d;
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 150%;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .heroContainer {
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+       
+    }
+
+    .heroArticle {
+        width: 100%;
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* PREGUNTARRRRRRR
+    .heroArticle div {
+        width: 310px;
+        margin-left: 250px;
+    } */
+
+    .heroImage {
+    
+        width: 100%;
+   
+    }
+    
+    .firstCard {
+        max-width: 200px;
+        position: absolute;
+        /* top: 10px; */
+        top: 5%;
+        /* left: -80px;   */
+        left: -25%
+    }
+    
+    
+    .secondCard{
+        max-width: 200px;
+        position: absolute;
+        bottom: -80px;
+        right: -85px;
+    }
+}
+
+

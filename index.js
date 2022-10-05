@@ -14,7 +14,9 @@ const start = async () => {
     let object1  = await getData()
     console.log(object1)
    document.querySelector('#firstProjectTitle').innerHTML = object1.title
-   
+
+//    Si pongo el titulo en big project me saca el body en recent projects
+//    document.querySelector('#bigProjectTitle').innerHTML = object1.title
    document.querySelector('#firstProjectContent').innerHTML = object1.body
 }
 
@@ -52,7 +54,7 @@ const getData3 = async () => {
  
 const start3 = async () => {
     let object3  = await getData3()
-   document.querySelector('#thirdProjectTitle').innerHTML = object3.title
+   document.querySelector('#thirdProjectTitle').innerHTML = object3.title 
    document.querySelector('#thirdProjectContent').innerHTML = object3.body
 }
 
@@ -79,3 +81,16 @@ const startProject = async ()=> {
 
 
 window.addEventListener('load', startProject)
+
+
+
+// MENU HAMBURGUESA
+
+const hamburgerMenu = document.querySelector('.hamburgerMenu')
+const navMenu = document.querySelector('.navMenu')
+
+hamburgerMenu.addEventListener("click", () => {
+    console.log("click")
+    hamburgerMenu.classList.toggle("active");
+    navMenu.classList.toggle("activeMenu");
+})

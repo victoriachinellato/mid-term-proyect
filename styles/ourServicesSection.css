@@ -1,5 +1,87 @@
 /* OUR SERVICES SECTION */
 
+
+/* OUR SERVICES SECTION */
+
+.ourServicesContainer {
+    margin: 100px;
+    margin-right: 80px;
+}
+
 .theServices {
     display: flex;
+    margin-top: 30px;
+    
+}
+
+.eachService {
+    background-color: #fff;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eachService h3{
+    color: #292E47;
+    margin: 30px;
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+
+}
+
+.eachService a {
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    color: #072ac8;
+}
+
+.eachService p {
+    color: #292E47;
+    margin: 30px;
+    font-size: 17px;
+}
+
+.eachService a {
+    margin-bottom: 30px;
+}
+
+.imageContainer {
+    height: 110px;
+    width: 110px;
+    aspect-ratio: 1;
+    margin-top: 40px;
+    margin-left: 40px;
+
+    border-radius: 50%;
+    background-color: #ecf7ff;
+}
+.eachService img {
+    
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 23px;
+    background-color: #ecf7ff;
+}
+
+@media(max-width:768px) { 
+    .theServices {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        
+    }
+
+    .eachService {
+        background-color: #fff;
+        margin-right: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+   
 }
