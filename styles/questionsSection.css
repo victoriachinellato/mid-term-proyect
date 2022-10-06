@@ -57,6 +57,20 @@
     width: 393px;
 }
 
+@media(max-width: 1150px) {
+
+    .questionSectionContainer{
+        
+        
+        margin: 50px;
+       
+    }
+
+    
+}
+
+
+
 
 
 @media(max-width:768px) {
@@ -103,3 +117,4 @@
     }
 
 }
+
