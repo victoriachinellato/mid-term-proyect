@@ -87,3 +87,25 @@
     background-color: #292E47;
 }
 
+
+@media(max-width:768px) {
+    .contactUsSectionContainer{
+        margin: 50px;
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contactUsSectionContainer{
+        margin: 20px;
+    }
+
+    .emailPhone {
+        flex-direction: column;
+    }
+
+    .email, .phone {
+        width: 100%;
+    }
+
+}

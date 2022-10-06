@@ -82,6 +82,23 @@
         flex-direction: column;
         justify-content: space-between;
     }
+}
 
-   
+
+@media only screen and (max-width: 600px) {
+    .ourServicesContainer {
+        margin: 20px;
+        margin-right: 0px;
+    }
+
+    .eachService {
+        
+        margin-right: 15px;
+        margin-top: 15px;
+        
+        
+        justify-content: space-between;
+    }
+    
+
 }

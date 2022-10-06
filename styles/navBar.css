@@ -92,6 +92,9 @@
         margin: 20px;
     }
 
+    .hamburgerMenu.active {
+        background-color: #292E47;
+    }
     .hamburgerMenu.active .bar:nth-child(2){
         opacity: 0;
     }

@@ -7,7 +7,6 @@
 .recentProjectsContainer {
     display: flex;
     flex-direction: column;
-    
     margin: 100px 100px 50px 50px;
  }
  
@@ -76,6 +75,8 @@
         flex-direction: column;
         justify-content: space-between;
         margin-top: 30px;
+        
+       
        
     }
 
@@ -87,4 +88,39 @@
         margin-right: 30px;
         margin-left:30px ;
      }
+ }
+
+
+ @media only screen and (max-width: 600px) {
+
+    .recentProjectsContainer {
+        margin: 10px;
+        align-items: center;
+        margin-top: 70px;
+        
+     }
+
+     .eachProject{
+        background-color: #fff;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px !important;
+        
+        
+    }
+
+    .recentProjectsContainer h2{
+        font-size: 40px;
+        margin-left: 0px;
+    
+    }
+
+   .recentProyects {
+    margin: 10px;
+   }
+
+     
+
  }

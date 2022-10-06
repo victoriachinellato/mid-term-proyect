@@ -12,7 +12,6 @@ const getData = async () => {
 // 2. Creo la funcion que llamara a la data function y mostrara en el HTML la info
 const start = async () => {
     let object1  = await getData()
-    console.log(object1)
    document.querySelector('#firstProjectTitle').innerHTML = object1.title
 
 //    Si pongo el titulo en big project me saca el body en recent projects
@@ -62,26 +61,6 @@ const start3 = async () => {
 window.addEventListener('load', start3)
 
 
-// PROJECT PAGE
-// !!!!!!!!!!PREGUNTA: Como usar los que son formato text
-
-const getData4 = async () => {
-    const promise = await fetch ('https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1')
-    const data = await promise.json()
-    return data
-}    
-
-const startProject = async ()=> {
-
-    let object4 = await getData4()
-    console.log(object4)
-    document.querySelector('.bigProjectText').innerHTML = object4
-}
-
-
-
-window.addEventListener('load', startProject)
-
 
 
 // MENU HAMBURGUESA
@@ -94,3 +73,19 @@ hamburgerMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
     navMenu.classList.toggle("activeMenu");
 })
+
+const emailPag1 = document.querySelector('#emailPag1')
+const suscribeBtnPag1 = document.querySelector('#suscribeBtn1')
+const validarMail = () => {
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (emailPag1.value.match(mailformat)) {
+        return true; 
+    } 
+    else {
+        alert("Invalid email address!")
+        return false;
+    }
+}
+
+
+suscribeBtnPag1.addEventListener('click', validarMail)
