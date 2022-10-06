@@ -53,6 +53,7 @@
      width: auto;
      height: 300px;
      padding-bottom: 20px;
+     object-fit: cover;
  }
  
  #secondProjectLink, #thirdProjectLink, #firstProjectLink {
@@ -61,23 +62,55 @@
      margin: 30px;
      bottom: 0px;
  }
- 
- @media(max-width:768px) {
+
+ @media(max-width: 1150px) {
     .theProjects {
         flex-direction: column;
         
     }
 
+    .recentProjectsContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 50px 50px 50px;
+     }
+
+
+     .theProjects {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+     }
+
+     .eachProject{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin: 100px;
+        
+        
+        
+       
+    }
+    
+     
+
+ }
+ 
+ @media(max-width:768px) {
+    .theProjects {
+        flex-direction: column;
+    }
+
     .eachProject{
         background-color: #fff;
-        
+        margin: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 30px;
-        
-       
-       
     }
 
     .theProjects {
@@ -94,31 +127,32 @@
  @media only screen and (max-width: 600px) {
 
     .recentProjectsContainer {
-        margin: 10px;
-        align-items: center;
+        margin: 0px;
         margin-top: 70px;
-        
      }
 
+     .theProjects {
+        margin-right: 0px;
+        margin-left: 0px ;
+     }
+
+     
      .eachProject{
         background-color: #fff;
         margin-left: 0px;
+        margin: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px !important;
-        
-        
     }
 
     .recentProjectsContainer h2{
         font-size: 40px;
-        margin-left: 0px;
-    
+        margin-left: 50px;
     }
 
    .recentProyects {
-    margin: 10px;
+    margin: 0px;
    }
 
      

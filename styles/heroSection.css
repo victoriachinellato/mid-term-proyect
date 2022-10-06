@@ -10,7 +10,7 @@
 .heroArticle {
     width: 50%;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
 
 }
@@ -30,7 +30,7 @@
     font-size: 20px;
     margin-bottom: 30px;
     line-height: 150%;
-    margin-right: 200px;
+   
 }
 
 .geInTouchBtn {
@@ -54,12 +54,13 @@
 .heroContainer {
     display: flex;
     justify-content: space-around;
+    margin: 50px;
 
 }
 .heroImages{
     position: relative;
     width: 60vw;
-    margin-right: 100px;
+    
     
 }
 .heroImage {
@@ -75,7 +76,8 @@
     /* top: 10px; */
     top: 5%;
     /* left: -80px;   */
-    left: -15%
+    left: -15%;
+    animation: float 6s ease-in-out infinite;
 }
 
 
@@ -84,7 +86,69 @@
     position: absolute;
     bottom: -140px;
     right: -85px;
+    animation: float 6s ease-in-out infinite;
 }
+
+@keyframes float {
+	0% {
+    filter: drop-shadow(#000 0px 5px 15px 0px);
+		transform: translatey(0px);
+	}
+	50% {
+    filter: drop-shadow(#000 0px 25px 15px 0px);
+		transform: translatey(-20px);
+	}
+	100% {
+    filter: drop-shadow(#000 0px 5px 15px 0px);
+		transform: translatey(0px);
+	}
+}
+
+@media(max-width: 1150px) {
+    .heroContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroArticle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .heroImages{
+        position: relative;
+        width: 80vw;
+        margin-right: 0px;
+        
+    }
+
+    .heroArticle h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+
+    .heroArticle p {
+        color: #6b708d;
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 150%;
+        margin-right: 0px;
+    }
+}
+
+
+
 
 @media(max-width:780px) {
     .heroArticle h1 {
@@ -163,9 +227,9 @@
 
     .heroArticle {
         width: 100%;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;

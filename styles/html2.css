@@ -38,6 +38,16 @@
     
 }
 
+@media(max-width: 1150px) {
+    .bigProyectContainer {
+        margin: 100px;
+    }
+
+    
+
+
+}
+
 
 @media(max-width:768px) {
     .bigProyectContainer {

@@ -89,3 +89,44 @@ const validarMail = () => {
 
 
 suscribeBtnPag1.addEventListener('click', validarMail)
+
+
+//Randerizado de imagenes
+const services = [
+    {
+        img: 'FOTOS/our services section/3.svg',
+        title: 'User Interface Design',
+        text: 'Circle provides you with a stunning user interface design that is accessible to everyone.'
+    },
+    {
+        img: 'FOTOS/our services section/2.svg',
+        title: 'User Experience Design',
+        text: 'Circle always focuses on delivering the best user experience to your customers.'
+    },
+    {
+        img: 'FOTOS/our services section/3.svg',
+        title: 'Application Development',
+        text: 'We develop high-quality mobile and web applications using the latest technology stack.'
+    },
+
+];
+
+
+let html ='';
+
+for (i = 0; i < services.length; i++) {
+    
+    html +=  `<div class="eachService">
+    <div class="imageContainer">
+        <img id="service1img" src="${services[i].img}" alt="Our services section icon 1">
+    </div>
+    <h3>${services[i].title}</h3>
+    <p>${services[i].text}</p>
+    <a href="#">Learn More</a>
+</div>`
+}
+
+document.querySelector('#theServices').innerHTML = html 
+
+
+

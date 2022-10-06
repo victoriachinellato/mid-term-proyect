@@ -66,12 +66,29 @@
     background-color: #ecf7ff;
 }
 
-@media(max-width:768px) { 
+@media(max-width: 1150px){
     .theServices {
         display: flex;
         margin-top: 30px;
         flex-direction: column;
-        
+    }
+
+    .eachService {
+        background-color: #fff;
+        margin-right: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+@media(max-width:768px) { 
+    .theServices {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column; 
     }
 
     .eachService {
