@@ -1,121 +1,114 @@
 /* OUR SERVICES SECTION */
 
-
 /* OUR SERVICES SECTION */
 
 .ourServicesContainer {
-    margin: 100px;
-    margin-right: 80px;
+  margin: 100px;
+  margin-right: 80px;
 }
 
 .theServices {
-    display: flex;
-    margin-top: 30px;
-    
+  display: flex;
+  margin-top: 30px;
 }
 
 .eachService {
-    background-color: #fff;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #fff;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
 }
 
-.eachService h3{
-    color: #292E47;
-    margin: 30px;
-    font-size: 24px;
-    line-height: 115%;
-    font-weight: 500;
-
+.eachService h3 {
+  color: #292e47;
+  margin: 30px;
+  font-size: 24px;
+  line-height: 115%;
+  font-weight: 500;
 }
 
 .eachService a {
-    text-decoration: none;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    color: #072ac8;
+  text-decoration: none;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  color: #072ac8;
 }
 
 .eachService p {
-    color: #292E47;
-    margin: 30px;
-    font-size: 17px;
+  color: #292e47;
+  margin: 30px;
+  font-size: 17px;
 }
 
 .eachService a {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .imageContainer {
-    height: 110px;
-    width: 110px;
-    aspect-ratio: 1;
-    margin-top: 40px;
-    margin-left: 40px;
+  height: 110px;
+  width: 110px;
+  aspect-ratio: 1;
+  margin-top: 40px;
+  margin-left: 40px;
 
-    border-radius: 50%;
-    background-color: #ecf7ff;
+  border-radius: 50%;
+  background-color: #ecf7ff;
 }
 .eachService img {
-    
-    height: 70px;
-    margin-top: 20px;
-    margin-left: 23px;
-    background-color: #ecf7ff;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 23px;
+  background-color: #ecf7ff;
 }
 
-@media(max-width: 1150px){
-    .theServices {
-        display: flex;
-        margin-top: 30px;
-        flex-direction: column;
-    }
+@media (max-width: 1150px) {
+  .theServices {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
 
-    .eachService {
-        background-color: #fff;
-        margin-right: 30px;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
+  .eachService {
+    background-color: #fff;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
-@media(max-width:768px) { 
-    .theServices {
-        display: flex;
-        margin-top: 30px;
-        flex-direction: column; 
-    }
+@media (max-width: 768px) {
+  .theServices {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
 
-    .eachService {
-        background-color: #fff;
-        margin-right: 30px;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .eachService {
+    background-color: #fff;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-
 
 @media only screen and (max-width: 600px) {
-    .ourServicesContainer {
-        margin: 20px;
-        margin-right: 0px;
-    }
+  .ourServicesContainer {
+    margin: 20px;
+    margin-right: 0px;
+    margin-top: 50px;
+  }
 
-    .eachService {
-        
-        margin-right: 15px;
-        margin-top: 15px;
-        
-        
-        justify-content: space-between;
-    }
-    
+  .eachService {
+    margin-right: 15px;
+    margin-top: 15px;
 
+    justify-content: space-between;
+  }
 }

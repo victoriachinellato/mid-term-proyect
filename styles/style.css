@@ -10,25 +10,12 @@
 @import "./theProjectsSection.css";
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
-    
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-
 
 body {
-    background-color: #F2F4FC;
-    
+  background-color: #f2f4fc;
 }
-
-
-
-
-
-
-
-
-

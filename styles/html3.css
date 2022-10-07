@@ -1,111 +1,123 @@
 /* HTML 3 */
 /* CONTACT US SECTION */
 
-.contactUsSectionContainer{
-    margin: 150px;
-    
+.contactUsSectionContainer {
+  margin: 150px;
 }
 .contactUsSectionContainer h1 {
-    font-size: 60px;
-    color: #292E47;
+  font-size: 60px;
+  color: #292e47;
 }
 
 .contactUsForm {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-.contactUsLabel{
-    margin-bottom: 10px;
-    color: #6b708d;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 10px;
+.contactUsLabel {
+  margin-bottom: 10px;
+  color: #6b708d;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
-
-.fullName input{
-    background-color: rgba(107, 112, 141, 0.1);
-    border: none;
-    width: 100%;
-    height: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-size: 15px;
+.fullName input {
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 15px;
 }
-
-
 
 .emailPhone input {
-    background-color: rgba(107, 112, 141, 0.1);
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    width: 100%;
-    height: 60px;
-    font-size: 15px;
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
 }
 
 .emailPhone {
-    display: flex;
-    justify-content: space-between;
-    
+  display: flex;
+  justify-content: space-between;
 }
-.email, .phone {
-    display: flex;
-    flex-direction: column;
-    width: 49%;
+
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
 }
 
 .message input {
-    background-color: rgba(107, 112, 141, 0.1);
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    width: 100%;
-    height: 200px;
-    padding-bottom: 150px;
-    font-size: 15px;
-
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 150px;
+  font-size: 15px;
 }
 
 .contactUsForm button {
-    height: 60px;
-    width: 100%;
-    border: none;
-    background-color: #072ac8;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 20px;
-    
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #072ac8;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
+.message {
+  margin-top: 10px;
 }
 
 .contactUsForm button:hover {
-    background-color: #292E47;
+  background-color: #292e47;
 }
 
+/* ipad Air */
 
-@media(max-width:768px) {
-    .contactUsSectionContainer{
-        margin: 50px;
-        
-    }
+@media (max-width: 1150px) {
+  .contactUsSectionContainer {
+    margin: 50px;
+  }
 }
+
+/* ipad Mini */
+
+@media (max-width: 768px) {
+  .contactUsSectionContainer {
+    margin: 50px;
+  }
+}
+
+/* Phone */
 
 @media only screen and (max-width: 600px) {
-    .contactUsSectionContainer{
-        margin: 20px;
-    }
+  .contactUsSectionContainer {
+    margin: 20px;
+  }
 
-    .emailPhone {
-        flex-direction: column;
-    }
+  .emailPhone {
+    flex-direction: column;
+  }
 
-    .email, .phone {
-        width: 100%;
-    }
+  .email,
+  .phone {
+    width: 100%;
+  }
 
+  .footerText {
+    text-align: center;
+  }
 }

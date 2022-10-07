@@ -1,161 +1,146 @@
 /* LOS 3 PROYECTOS SECTION */
 
-
-/* LOS 3 PROYECTOS SECTION */
-
-
 .recentProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 50px 50px;
+}
+
+.recentProjectsContainer h2 {
+  color: #292e47;
+  font-size: 40px;
+  margin-left: 100px;
+}
+.theProjects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+}
+
+.eachProject {
+  background-color: #fff;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.eachProject h3 {
+  margin: 30px 30px 20px;
+  font-size: 25px;
+  color: #292e47;
+  line-height: 115%;
+  font-weight: 500;
+}
+
+.eachProject p {
+  color: #292e47;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eachProject img {
+  width: auto;
+  height: 300px;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+#secondProjectLink,
+#thirdProjectLink,
+#firstProjectLink {
+  text-decoration: none;
+  color: #072ac8;
+  margin: 30px;
+  bottom: 0px;
+}
+
+@media (max-width: 1150px) {
+  .recentProjectsContainer {
     display: flex;
     flex-direction: column;
-    margin: 100px 100px 50px 50px;
- }
- 
- .recentProjectsContainer h2{
-     color:#292E47;
-     font-size: 40px;
-     margin-left: 100px;
- 
- }
- .theProjects {
+    margin: 90px 20px 20px 20px;
+  }
+
+  .theProjects {
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
-    margin-right: 100px;
- }
- 
- .eachProject{
-     background-color: #fff;
-     margin-left: 50px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-    
- }
- 
- .eachProject h3 {
-     margin: 30px 30px 20px;
-     font-size: 25px;
-     color:#292E47;
-     line-height: 115%;
-     font-weight: 500;
- }
- 
- .eachProject p {
-     color:#292E47;
-     margin: 30px;
-     font-size: 16px;
-     font-weight: 400;
- }
- 
- 
- .eachProject img {
-     width: auto;
-     height: 300px;
-     padding-bottom: 20px;
-     object-fit: cover;
- }
- 
- #secondProjectLink, #thirdProjectLink, #firstProjectLink {
-     text-decoration: none;
-     color: #072ac8;
-     margin: 30px;
-     bottom: 0px;
- }
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 
- @media(max-width: 1150px) {
-   
+  .eachProject {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin: 50px;
+  }
 
-    .recentProjectsContainer {
-        display: flex;
-        flex-direction: column;
-        margin: 90px 20px 20px 20px;
-     }
+  .eachProject img {
+    height: 430px;
+  }
+}
 
-     .recentProjectsContainer h2{
-        margin-left: 120px;
+@media (max-width: 768px) {
+  .theProjects {
+    flex-direction: column;
+  }
 
-     }
-     .theProjects {
-        flex-direction: column;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        margin-right: 20px;
-        margin-left: 20px;
-     }
+  .eachProject {
+    background-color: #fff;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
 
-     .eachProject{
-        margin-top: 20px;
-        margin-left: 0px;
-        margin: 50px;
-        
-        
-        
-       
-    }
-    
-     
+  .theProjects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
 
- }
- 
- @media(max-width:768px) {
-    .theProjects {
-        flex-direction: column;
-    }
-
-    .eachProject{
-        background-color: #fff;
-        margin: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 30px;
-    }
-
-    .theProjects {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        margin-right: 30px;
-        margin-left:30px ;
-     }
- }
-
-
- @media only screen and (max-width: 600px) {
-
-    .recentProjectsContainer {
-        margin: 0px;
-        margin-top: 70px;
-     }
-
-     .theProjects {
-        margin-right: 0px;
-        margin-left: 0px ;
-     }
-
-     
-     .eachProject{
-        background-color: #fff;
-        margin-left: 0px;
-        margin: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .recentProjectsContainer h2{
-        font-size: 40px;
-        margin-left: 50px;
-    }
-
-   .recentProyects {
+@media only screen and (max-width: 600px) {
+  .recentProjectsContainer {
     margin: 0px;
-   }
+    margin-top: 70px;
+  }
 
-     
+  .theProjects {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 
- }
+  .eachProject {
+    margin-left: 0px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .recentProjectsContainer h2 {
+    font-size: 40px;
+    margin-left: 50px;
+  }
+
+  .recentProyects {
+    margin: 0px;
+  }
+
+  .eachProject img {
+    height: 240px;
+  }
+}
