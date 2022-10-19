@@ -1,6 +1,6 @@
 # MID-TERM-PROJECT
 
-Proyecto responsive que incorpora los lenguajes de HTML, CSS,Y JAVASCRIPT. 
+Proyecto responsive que incorpora los lenguajes de HTML, CSS Y JAVASCRIPT. 
 
 El sitio web creado cuenta con:
 
